@@ -19,7 +19,7 @@ class NatsCConan(ConanFile):
         return 'src'
 
     def source(self):
-        self.run("git clone https://github.com/nats-io/nats.c --branch v2.1.0 --depth 1")
+        self.run("git clone https://github.com/nats-io/nats.c --branch v2.1.0 --depth 1 {}".format(self.source_dir))
         # This small hack might be useful to guarantee proper /MT /MD linkage
         # in MSVC if the packaged project doesn't have variables to set it
         # properly
