@@ -1,6 +1,6 @@
 #include <iostream>
-#include "hello.h"
+#include "nats.h"
 
 int main() {
-    hello();
+  std::cout<<"hi"<<std::endl;
 }
